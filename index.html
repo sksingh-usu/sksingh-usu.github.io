@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Kids Cross Street</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"> </script>
+</head>
+<body>
+    <div id="gameMenu">
+        <div id="Start" >
+            <button onclick="game.activateGameStart()" class="menu-button"><img src="images/start-game.png"></button>
+        </div>
+        <div id="instruction" >
+            <button onclick="game.showInstruction()" class="menu-button"><img src="images/Instructions.png"></button>
+        </div>
+
+        <div id="Pause">
+            <button name="Pause" onclick="game.activateGamePause()" class="menu-button"><img src="images/pause-game.png"></button>
+        </div>
+        <div id="Resume">
+            <button name="Resume" onclick="game.activateGameResume()" class="menu-button"><img src="images/resume-game.png"></button>
+        </div>
+        <div id="Restart">
+            <button name="Reset" onclick="game.activateGameRestart()" class="menu-button"><img src="images/restart-game.png"></button>
+        </div>
+    </div>
+	<div id="gameWindow"> </div>
+	<div id="visualControls">
+		<div id="upControl"> <button name="upControl" onClick='handleInput("up")'> <img src="images/arrow-up-icon.png"></button></div>
+		<div id="leftControl"><button name="leftControl" onClick='handleInput("left")'> <img src="images/arrow-left-icon.png"></button> </div>
+		<div id="rightControl"> <button name="rightControl" onClick='handleInput("right")'><img src="images/arrow-right-icon.png"> </button></div>
+		<div id="bottomControl"> <button name="bottomControl" onClick='handleInput("down")'><img src="images/arrow-down-icon.png"> </button> </div>
+	</div>
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/engine.js"></script>
+
+</body>
+</html>

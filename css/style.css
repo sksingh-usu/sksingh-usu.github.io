@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+    background-color: black;
+}
+
+.menu-button {
+    border: none;
+    background: none;
+}
+
+#Pause, #Resume, #Restart{
+    display: none;
+}
+
+#visualControls{
+width:100%;
+display:none;
+}
+
+#leftControl, #rightControl{
+display:inline;
+}
+#upControl{
+	margin-bottom:50px;
+	margin-top:100px;
+}
+#downControl{
+	margin-top:100px;
+}
+#leftControl{
+padding-right:50%;
+}
+
+@media screen and (max-width: 500px){
+	#visualControls { display: block;}
+}
+
+
+
+
+

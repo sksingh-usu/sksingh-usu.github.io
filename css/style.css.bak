@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    background-color: white;
+}
+
+.menu-button {
+    border: none;
+    background: none;
+}
+
+#Pause, #Resume, #Restart{
+    display: none;
+}
+
+
